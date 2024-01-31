@@ -98,10 +98,10 @@ img:not(.logo) {
 }
 
 .logo {
-    width: 10%;
+    width: 10em;
     background-color: rgba(248, 222, 255, 0.541);
     border-radius: 100%;
-    margin: 1em;
+    margin: 0;
 }
 
 

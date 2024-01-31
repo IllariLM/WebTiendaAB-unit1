@@ -1,236 +1,195 @@
 <!DOCTYPE html>
-
-<html lang="es-ES">
-
-
+<html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Michi Tienda</title>
     <meta name="description" content="Tienda de charms">
     <meta name="keywords" content="tienda, llaveros, standees">
     <meta name="author" content="Illari Lamberti">
-
-
-
-
-
-
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./BOOTSTRAP/bootstrap.min.css">
-
-
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-    <script src="./js/script.js"></script>
-    <script src="./BOOTSTRAP/bootstrap.min.js"></script>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-    <header>
-        <nav id="arriba">
-            <img src=" .\img\michi_logo.png" alt="logo de la tienda" class="logo">
-
-
-
-            <div class="navigation">
-                <h1>inicio</h1>
-                <a href="html/quienes-somos.html"><button class="mano">Quiénes somos</button></a>
-                <a href="html/medio-ambiente.html"><button class="mano">Medio ambiente</button></a>
-                <a href="html/tienda.html"><button class="mano">tienda</button></a>
-                <a href="html/contacto.html"><button class="mano">contacto</button></a>
+    <header class="container mt-3 " id="arriba">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/michi_logo.png" alt="logo de la tienda" class="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto"> <!-- Cambiado de ms-auto a me-auto -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/quienes-somos.html">Quién soy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/medio-ambiente.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Comissiones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">animaciones</a></li>
+                                <li><a class="dropdown-item" href="#">dibujos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Otros</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">busqueda</button>
+                    </form>
+                </div>
             </div>
         </nav>
 
-
-
-
-
-        <div class="espacio">
-            <h1>Tienda de todo tipo de productos para gente rara</h1>
-            <a href="#carrito" class="mano"><button class="boton">carrito compra</button></a>
+        <div class="container mt-4">
+            <h1 class="display-4">Tienda de todo tipo de productos para gente rara</h1>
+            <a href="#carrito" class="btn btn-primary">Carrito de compra</a>
         </div>
     </header>
 
-    <main id="productos">
-        <section class="linea animate-in-keyframes ">
-            <article class="elemento" id="perros de conquista">
-                <img src="./img/perros_conquista.png" alt="">
-                <h3>sticker de animales conquistadores</h3>
+    <main id="productos" class="container mt-4">
+        <section class="linea animate-in-keyframes">
+            <article class="elemento" id="perros-de-conquista">
+                <img src="./img/perros_conquista.png" alt="Sticker de animales conquistadores">
+                <h3>Sticker de animales conquistadores</h3>
                 <p>Precio: 10.00€</p>
-                <button class="boton" onclick="agregarAlCarrito('perros de conquista', 10)">agrega al
+                <button class="btn btn-primary" onclick="agregarAlCarrito('perros-de-conquista', 10)">Agregar al
                     carrito</button>
             </article>
-            <article class="elemento " id="michi durmiando">
-                <img src="../p2_Lamberti_Illari_TiendaOnline/img/sticker_michi_durmiendo.png">
-                <h3>sticker de michi curmiendo</h3>
 
+            <article class="elemento" id="michi-durmiendo">
+                <img src="./img/sticker_michi_durmiendo.png" alt="Sticker de michi durmiendo">
+                <h3>Sticker de michi durmiendo</h3>
                 <p>Precio: 13.65€</p>
-                <button class="boton" onclick="agregarAlCarrito('michi durmiendo', 10)">agrega al carrito</button>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('michi-durmiendo', 13.65)">Agregar al
+                    carrito</button>
             </article>
-            <article class="elemento  " id="sticker feliz 2">
-                <img src="./img/feliz.png" alt="">
 
-                <h3>sticker feliz 2!</h3>
-                <p>
-                    Precio: 15.35€
-                </p>
-                <button class="boton" onclick="agregarAlCarrito('sticker feliz 2', 10)">
-                    comprar
-                </button>
+            <article class="elemento" id="sticker-feliz-2">
+                <img src="./img/feliz.png" alt="Sticker feliz 2">
+                <h3>Sticker feliz 2</h3>
+                <p>Precio: 15.35€</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('sticker-feliz-2', 15.35)">Agregar al
+                    carrito</button>
             </article>
         </section>
-        <section class=" linea linea animate-in-keyframes ">
-            <article class="elemento " id="criaturas monas">
-                <img src="./img/criaturasmonas.png" alt="">
-                <h3>sticker de dos bichitos monos!</h3>
-                <p>Precio: 11,45€</p>
-                <button class="boton" onclick="agregarAlCarrito('criaturas monas', 10)">
-                    agregar al carrito
-                </button>
 
+        <section class="linea animate-in-keyframes">
+            <article class="elemento" id="criaturas-monas">
+                <img src="./img/criaturasmonas.png" alt="Sticker de dos bichitos monos">
+                <h3>Sticker de dos bichitos monos</h3>
+                <p>Precio: 11.45€</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('criaturas-monas', 11.45)">Agregar al
+                    carrito</button>
             </article>
-            <article class="elemento  " id="chullo">
-                <img src="./img/chullo.png" alt="">
-                <h3>sticker de michi mimendo!</h3>
+
+            <article class="elemento" id="chullo">
+                <img src="./img/chullo.png" alt="Sticker de michi mimendo">
+                <h3>Sticker de michi mimendo</h3>
                 <p>Precio: 20€</p>
-                <button class="boton" onclick="agregarAlCarrito('chullo', 10)">
-                    comprar
-                </button>
-
+                <button class="btn btn-primary" onclick="agregarAlCarrito('chullo', 20)">Agregar al carrito</button>
             </article>
-            <article class="elemento " id="perro demonio">
-                <img src="./img/perro_demonio.png" alt="">
-                <h3>print de perro supay</h3>
-                <p>Precio: 22,57€</p>
-                <button class="boton" onclick="agregarAlCarrito('perro demonio', 10)">
-                    comprar
-                </button>
 
+            <article class="elemento" id="perro-demonio">
+                <img src="./img/perro_demonio.png" alt="Print de perro supay">
+                <h3>Print de perro supay</h3>
+                <p>Precio: 22.57€</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('perro-demonio', 22.57)">Agregar al
+                    carrito</button>
             </article>
         </section>
-        <section class="linea  animate-in-keyframes">
-            <article class="elemento " id="gato regordete gris">
-                <img src="./img/gato_regordete_gris.png" alt="">
-                <h3>sticker de gato regordete gris</h3>
-                <p>Precio: 12,53€</p>
-                <button class="boton " onclick="agregarAlCarrito('gato regordete gris', 10)">
-                    comprar
-                </button>
 
+        <section class="linea animate-in-keyframes">
+            <article class="elemento" id="gato-regordete-gris">
+                <img src="./img/gato_regordete_gris.png" alt="Sticker de gato regordete gris">
+                <h3>Sticker de gato regordete gris</h3>
+                <p>Precio: 12.53€</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('gato-regordete-gris', 12.53)">Agregar al
+                    carrito</button>
             </article>
-            <article class="elemento  " id="gato regordete  blanco">
-                <img src="./img/gato_regordete_blanco.png" alt="">
-                <h3>sticker de gato regordete blanco</h3>
-                <p>Precio: 12,53€</p>
-                <button class="boton" onclick="agregarAlCarrito('gato regordete  blanco', 10)">
-                    comprar
-                </button>
 
+            <article class="elemento" id="gato-regordete-blanco">
+                <img src="./img/gato_regordete_blanco.png" alt="Sticker de gato regordete blanco">
+                <h3>Sticker de gato regordete blanco</h3>
+                <p>Precio: 12.53€</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('gato-regordete-blanco', 12.53)">Agregar al
+                    carrito</button>
             </article>
-            <article class="elemento " id="michi regordete">
-                <img src="./img/michi_regordete.png" alt="">
-                <h3>sticker de michi regordete</h3>
-                <p>Precio: 12,53€</p>
-                <button class="boton" onclick="agregarAlCarrito('michi regordete', 10)">
-                    comprar
-                </button>
 
+            <article class="elemento" id="michi-regordete">
+                <img src="./img/michi_regordete.png" alt="Sticker de michi regordete">
+                <h3>Sticker de michi regordete</h3>
+                <p>Precio: 12.53€</p>
+                <button class="btn btn-primary" onclick="agregarAlCarrito('michi-regordete', 12.53)">Agregar al
+                    carrito</button>
             </article>
         </section>
-        <section class="linea elemento animate-in-keyframes ">
-            <article id="carrito" onclick="mostrarIcono()">
-                <img src="" alt="">
-                <h2>Carrito</h2>
-                <div id="itemsCarrito"></div>
-                <button onclick="vaciarCarrito()">Vaciar Carrito</button>
-                <a href="#arriba"><button> ir arriba</button></a>
-
-            </article>
-        </section>
-        <br>
-        <section class="linea elemento animate-in-keyframes  ">
-            <form id="contactForm">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <br>
-                <br>
-                <br>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <br>
-                <br>
-                <br>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
     </main>
 
+    <section class="linea elemento animate-in-keyframes">
+        <article id="carrito" onclick="mostrarIcono()">
+            <img src="" alt="">
+            <h2>Carrito</h2>
+            <div id="itemsCarrito"></div>
+            <button onclick="vaciarCarrito()" class="btn btn-danger">Vaciar Carrito</button>
+            <a href="#arriba" class="btn btn-primary">Ir arriba</a>
+        </article>
+    </section>
 
+    <section class="linea elemento animate-in-keyframes">
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required class="form-control">
+            <br>
+            <br>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required class="form-control">
+            <br>
+            <br>
+            <br>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required class="form-control"></textarea>
 
-    <footer>
-        <section class="linea" style="background-color: rgb(65, 26, 102);">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="mt-4" style="background-color: rgb(65, 26, 102);">
+        <section class="linea container text-white">
             <article class="footerelemento" style="width: 30%;">
-                <h2 style="margin-bottom: 10%; ">Enlaces</h2>
+                <h2 style="margin-bottom: 10%;">Enlaces</h2>
                 <ul>
-                    <br>
-                    <a class="aa" href="#arriba">volver arriba</a></li>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <a class="aa" href="https://twitter.com/explore">twitter </a></li>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-
-                    <a class="aa" href="#">Contacto</a></li>
+                    <li><a class="aa" href="#arriba">Volver arriba</a></li>
+                    <li><a class="aa" href="https://twitter.com/explore">Twitter</a></li>
+                    <li><a class="aa" href="#">Contacto</a></li>
                 </ul>
             </article>
 
@@ -241,10 +200,7 @@
             </article>
 
             <article class="footerelemento">
-                <h2>
-                    Dirección y mapa
-
-                </h2>
+                <h2>Dirección y mapa</h2>
                 <div class="mapa">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d559.5610391894165!2d-3.4910347701065083!3d40.78729988045518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd43c6888eddd355%3A0x1576c8f70ec0b0b0!2sC.%20Olmo%2C%2019188%20Caraquiz%2C%20Guadalajara!5e1!3m2!1sen!2ses!4v1702245035995!5m2!1sen!2ses"
@@ -254,7 +210,10 @@
                 </div>
             </article>
         </section>
-
-
     </footer>
+
+    <script src="./BOOTSTRAP/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
+</html>
