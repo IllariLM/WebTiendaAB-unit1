@@ -1,120 +1,309 @@
-
-
 * {
     margin: 0;
     padding: 0;
-    font-size: 105%;
+    font-size: 100%;
     line-height: 100%;
-    color: rgb(42, 0, 81);
+    color: rgb(3, 0, 34);
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 1%;
 
 }
-button{
-    background-color:  rgb(231, 93, 231);
-    border: 2.5px solid rgb(221, 152, 215);
-    border-radius: 5px;
 
-}
-nav {
-    background-color: rgb(168, 72, 147);
-    background-image: linear-gradient(to bottom right, rgba(255, 0, 255, 0.400), rgba(255, 255, 0, 0.400));
-    padding: 20px;
-    text-align: center;
-    align-content: center;
-    display: flex;
-    align-items:center;
+body {
 
-
-}
-main {
 
     background-image: linear-gradient(to bottom right, rgb(255, 0, 255), yellow);
-    background-size: cover, auto;
+
+    background-attachment: fixed;
+    background-size: cover, no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     height: 50%;
 
 
 }
+
+button {
+    background-color: rgb(231, 93, 231);
+    border: 2.5px solid rgb(221, 152, 215);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0.5em;
+   
+
+
+
+}
+button:hover{
+    background-color: rgb(228, 153, 228); 
+}
+
+nav {
+    background-color: rgb(168, 72, 147);
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 255, 0.400), rgba(255, 255, 0, 0.400));
+    text-align: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+
+
+}
+
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 200%;
 
     color: rgb(255, 255, 255);
 }
-.aa{
-    margin-top: 10%;
-    margin-bottom: 10%;
-    text-decoration: none;
+
+.espacio {
+    background-color: rgb(165, 42, 149);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 
 }
+
 img:not(.logo) {
-    /* Estilos para las imágenes que no tienen la clase "logo" */
     width: 100%;
     height: auto;
     border: 1px solid #ddd;
     background-color: #818181;
     border-radius: 100px;
     margin-bottom: 10px;
-  }
-
-
-
-.elemento:hover{
-    transform: scale(1.2);
 }
 
-.logo{
+.navigation {
+
+    text-align: center;
+    align-content: center;
+    display: inline-flex;
+    align-items: center;
+    margin: 1em;
+    margin-left: 6em;
+}
+
+.navigation :not(button) {
+    margin: 1em;
+}
+
+
+.elemento:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo {
     width: 10%;
     background-color: rgba(248, 222, 255, 0.541);
-    border-radius:  100%;
+    border-radius: 100%;
+    margin: 1em;
 }
 
-#navigation {
-    color: rgb(255, 255, 255)
-}
+
+
 .mano {
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     font-size: 150%;
-    align-items: center ;
-    margin-left: 5em;
+    align-items: center;
+
 }
-.titulo{
+
+.titulo {
     color: rgb(0, 255, 255);
     font-size: 100 rem;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0.5%;
 
 }
+
 .linea {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
-  }
+}
+
 .elemento {
     text-align: center;
     height: fit-content;
     margin: 80px;
-    padding: 15px; 
-    background-color: #fff; 
+    padding: 15px;
+    background-color: #fff;
     border-radius: 10%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
+
+.carrito{
+align-items: normal;
+}
+
+.elemento:not(.carrito){
+    text-align: center;
+    height: fit-content;
+
+    padding: 15px;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom , rgba(4, 0, 80, 0.116),rgb(255, 255, 255));
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.438);
+}
+
 .footerelemento {
     text-align: center;
     height: fit-content;
     margin: 80px;
-    padding: 15px; 
-    background-color: #fff; 
+    padding: 15px;
+    background-color: #fff;
     border-radius: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.274);
+    width: 100%;
 }
-.boton{
+
+.boton {
     margin-top: 5%;
-    background-color:  rgba(233, 166, 233, 0.514);
+    background-color: rgba(233, 166, 233, 0.514);
     border: 2.5px solid rgb(221, 152, 215);
     border-radius: 5px;
+}
+.mapa{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+
+}
+
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#contactForm{
+
+    text-align: center;
+    align-content: center;
+    display: inline-flex;
+    align-items: center;
+    margin: 1em;
+    margin-left: 5em;
+
+}
+form{
+    text-align: center;
+    align-content: center;
+    display: inline-flex;
+    align-items: center;
+    margin: 1em;
+    margin-left: 5em;
+
+}
+
+.animate-in {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+
+.animate-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animate-in-keyframes {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards; 
+}
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .navigation :not(button) {
+        margin: 0.5em;
+    }
+
+
+    button {
+        padding: 0.3em;
+        font-size: 90%;
+    }
+
+    h1,
+    p,
+    a {
+        font-size: 90%;
+    }
+
+    nav {
+        width: 100%;
+
+    }
+    .elemento,
+    .footerelemento {
+        margin: 10px;
+    }
+    footer {
+        padding: 20px;
+    }
+
+    .footerelemento {
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+
+    .footerelemento h2 {
+        margin-bottom: 10%;
+    }
+
+    .footerelemento img {
+        width: 80%; 
+        margin: 10px auto;
+    }
+
+    .mapa {
+        width: 100%; 
+    }
+    #contactForm {
+        max-width: 100%;
+        margin: 0 auto; 
+    }
+
+    label,
+    input,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+    }
 }
